@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Cuenta Bancaria</title>
+  <!-- Fuente de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Enlazamos el CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Simulador de Cuenta Bancaria</h2>
+    <button class="btn deposit-btn" onclick="depositar()">Depositar</button>
+    <button class="btn withdraw-btn" onclick="retirar()">Retirar</button>
+    <button class="btn consult-btn" onclick="consultarSaldo()">Consultar Saldo</button>
+    <button class="btn exit-btn" onclick="salir()">Salir</button>
+    <h3 id="resultado"></h3>
+  </div>
+  
+  <!-- Enlazamos el archivo de JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
