@@ -1,0 +1,116 @@
+/* Reset y configuración global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    /* Fondo degradado en tonos de verde */
+    background: linear-gradient(135deg, #A8E063, #56AB2F);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  /* Contenedor principal más grande */
+  .container {
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  /* Título en negro */
+  h2 {
+    margin-bottom: 1.5rem;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  /* Estilos base para los botones */
+  .btn {
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  /* Definición de la animación hover */
+  @keyframes hoverPulse {
+    0% {
+      transform: scale(1);
+      box-shadow: none;
+    }
+    50% {
+      transform: scale(1.07);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      transform: scale(1.05);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  /* Botón Depositar - Verde oscuro */
+  .deposit-btn {
+    background-color: #2E7D32; /* Verde oscuro */
+    color: #fff;
+  }
+  .deposit-btn:hover {
+    background-color: #27632a; /* Variante más oscura */
+    transform: scale(1.05);
+    animation: hoverPulse 0.3s ease forwards;
+  }
+  
+  /* Botón Retirar - Rojo */
+  .withdraw-btn {
+    background-color: #D32F2F; /* Rojo */
+    color: #fff;
+  }
+  .withdraw-btn:hover {
+    background-color: #b71c1c; /* Variante más oscura */
+    transform: scale(1.05);
+    animation: hoverPulse 0.3s ease forwards;
+  }
+  
+  /* Botón Consultar Saldo - Azul */
+  .consult-btn {
+    background-color: #1976D2; /* Azul */
+    color: #fff;
+  }
+  .consult-btn:hover {
+    background-color: #1565C0; /* Variante más oscura */
+    transform: scale(1.05);
+    animation: hoverPulse 0.3s ease forwards;
+  }
+  
+  /* Botón Salir - Amarillo */
+  .exit-btn {
+    background-color: #FBC02D; /* Amarillo */
+    color: #fff;
+  }
+  .exit-btn:hover {
+    background-color: #F9A825; /* Variante más oscura */
+    transform: scale(1.05);
+    animation: hoverPulse 0.3s ease forwards;
+  }
+  
+  /* Estilo para el resultado */
+  #resultado {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    word-break: break-all;
+    color: #333;
+  }
+  
